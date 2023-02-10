@@ -4,7 +4,6 @@ import { Repository } from 'typeorm';
 import { CreateFaDto } from './dto/create-fa.dto';
 import { UpdateFaDto } from './dto/update-fa.dto';
 import { Fa } from './entities/fa.entity';
-
 @Injectable()
 export class FaService {
   constructor(

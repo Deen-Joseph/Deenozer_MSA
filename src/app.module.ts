@@ -26,6 +26,7 @@ import { FaModule } from './apps/fa/fa.module';
         database: configService.get('DB_DATABASE'),
         synchronize: configService.get<boolean>('DB_SYNC'),
         logging: true,
+        autoLoadEntities:true,
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
       }),
       inject: [ConfigService],
