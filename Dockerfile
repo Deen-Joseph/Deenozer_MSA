@@ -27,4 +27,4 @@ COPY . .
 # ---- Release ----
 FROM build AS release
 EXPOSE 3000
-CMD ["tini","npm", "run", "start"]
+CMD ["npm", "run", "start"]

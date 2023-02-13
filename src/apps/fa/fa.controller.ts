@@ -15,7 +15,6 @@ export class FaController {
 
   @MessagePattern('findAllFa')
   findAll() {
-    // return "hello sheet"
     return this.faService.findAll();
   }
 

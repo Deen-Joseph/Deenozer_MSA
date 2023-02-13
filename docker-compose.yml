@@ -1,22 +1,22 @@
 version: '3'
 services:
-  web:
-    build: .
-    depends_on:      
-      - redis-server
+  # web:
+  #   build: .
+  #   depends_on:      
+  #     - redis-server
 
-    network_mode: host
-    environment:
-      NODE_ENV: development
-      DB_HOST: 172.22.16.161
-      DB_PASSWORD: pgadmin
-      DB_USER: postgres
-      DB_DATABASE: deenozer
-      DB_PORT: 5432
-      DB_SYNC: true
-  redis-server:
-    image: redis:latest
-    ports:
-      - '6379:6379'
+  #   network_mode: host
+  #   environment:
+  #     NODE_ENV: development
+  #     DB_HOST: 172.22.16.161
+  #     DB_PASSWORD: pgadmin
+  #     DB_USER: postgres
+  #     DB_DATABASE: deenozer
+  #     DB_PORT: 5432
+  #     DB_SYNC: true
+    redis-server:
+      image: redis:latest
+      ports:
+        - '6379:6379'
 
  

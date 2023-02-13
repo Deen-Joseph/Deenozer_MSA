@@ -4,11 +4,13 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { FaModule } from './apps/fa/fa.module';
+import { ClubsModule } from './apps/clubs/clubs.module';
 
 
 @Module({
   imports: [
     FaModule,
+    ClubsModule,
     TypeOrmModule.forRootAsync({
       imports: [
         ConfigModule.forRoot({
